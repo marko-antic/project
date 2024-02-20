@@ -12,7 +12,8 @@ class Validation {
     public function check($source, $items = array()){
         foreach($items as $item => $rules){
             foreach($rules as $rule => $rule_value){
-                echo "{$item} {$rule} must be {$rule_value}<br>";
+               $value = $source[$item];
+               print_r($value);
             }
         }
     }
